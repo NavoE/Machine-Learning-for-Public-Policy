@@ -1,1 +1,4 @@
 # Machine-Learning-for-Public-Policy
+My variable selection process was primarily informed by the necessity of having baseline geographic and demographic information easily accessible for future use. I chose to keep my baseline API call simple so that I can readily incorporate any additional demographic features and/or locations of interest once they are needed. For this reason, the variables that I chose to use for this assignment include Name, Geo_ID, Population, Median Age, State, County, Census Tract, and Block Group.
+
+I installed the JSON package to load my ACS data using a census API URL that I constructed. After loading the data, I created a pandas data frame to structure my data into a table. Once the data was transformed, I created a connection to the class PostgreSQL database and exported my data frame to a CSV before copying it onto the database.
